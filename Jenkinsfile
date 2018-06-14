@@ -7,7 +7,7 @@ node {
             "Odoo Base": {
                dir('odoo-base'){
                    // git clone -b $defaultbranch  https://$usr:$pwd@"$line"
-                   sh git clone -b "${vitt_branch}" --depth 1 https://${usr}:${pass}@bitbucket.org/bacgroup/odoo-base.git
+                   sh "git clone -b "${vitt_branch}" --depth 1 https://${usr}:${pass}@bitbucket.org/bacgroup/odoo-base.git"
                }
             }
         )
