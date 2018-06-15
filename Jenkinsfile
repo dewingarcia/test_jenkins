@@ -3,7 +3,7 @@ node {
     usr='developmentmanconsulting'
     pass='pox2:hauteur'
     stage('Preparation') { // for display purposes
-       dir('odoo-base2'){
+       dir('odoo-base'){
            // git clone -b $defaultbranch  https://$usr:$pwd@"$line"
            sh "git clone -b ${vitt_branch} --depth 1 https://${usr}:${pass}@bitbucket.org/bacgroup/odoo-base.git"
        }
